@@ -20,3 +20,5 @@ This application is functional and the interface is simple to use.
 4. Refresh your tab after every countdown. 
 
 Kindly fork the repository for any contributions to the application.
+
+#### Eleos✒
