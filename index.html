@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Countdown Timer</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Countdown Timer</h1>
+
+      <div id="container" class="show-case">
+        <input
+          type="number"
+          id="hour"
+          class="time"
+          max="99"
+          min="0"
+          value="0"
+        />
+        <p id="p1" class="semicolon">:</p>
+        <input
+          type="number"
+          id="minute"
+          class="time"
+          max="60"
+          min="0"
+          value="0"
+        />
+        <p id="p2" class="semicolon">:</p>
+        <input type="number" id="sec" class="time" max="60" min="0" value="0" />
+
+        <button id="start" class="btn">Start</button>
+        <button id="reset" class="btn">Reset</button>
+      </div>
+    </div>
+
+    <!-- When the countdown ends -->
+    <div class="stopwatch">
+      <h1>Time Up!</h1>
+      <div class="stopwatch-container">
+        <div class="timerDisplay"> - 00 : 00</div>
+        <div class="buttons">
+          <button id="pauseTimer">Pause</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Js -->
+    <script src="main.js"></script>
+  </body>
+</html>
